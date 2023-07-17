@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fitness Calculator</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css">
+  
+</head>
+
+<body>
+  <div class="container">
+    <h1>Fitness Calculator</h1>
+
+    <form id="bmi-form">
+      <h2>BMI Calculator</h2>
+      <div class="form-group">
+        <label for="height">Height (cm):</label>
+        <input type="text" id="height" name="height" class="form-control" required>
+      </div>
+      <div class="form-group">
+        <label for="weight">Weight (kg):</label>
+        <input type="text" id="weight" name="weight" class="form-control" required>
+      </div>
+      <button type="submit" class="btn btn-primary">Calculate BMI</button>
+      <div id="bmi-result"></div>
+    </form>
+
+    <form id="bodyfat-form">
+      <h2>Body Fat Calculator</h2>
+      <div class="form-group">
+        <label for="bmi">BMI:</label>
+        <input type="text" id="bmi" name="bmi" class="form-control" required>
+      </div>
+      <div class="form-group">
+        <label for="age">Age:</label>
+        <input type="text" id="age" name="age" class="form-control" required>
+      </div>
+      <div class="form-group">
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" class="form-control" required>
+          <option value="0">Male</option>
+          <option value="1">Female</option>
+        </select>
+      </div>
+      <button type="submit" class="btn btn-primary">Calculate Body Fat</button>
+      <div id="bodyfat-result"></div>
+    </form>
+
+    <form id="idealweight-form">
+      <h2>Ideal Weight Calculator</h2>
+      <div class="form-group">
+        <label for="height">Height (cm):</label>
+        <input type="text" id="height" name="height" class="form-control" required>
+      </div>
+      <div class="form-group">
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" class="form-control" required>
+          <option value="0">Male</option>
+          <option value="1">Female</option>
+        </select>
+      </div>
+      <button type="submit" class="btn btn-primary">Calculate Ideal Weight</button>
+      <div id="idealweight-result"></div>
+    </form>
+
+    <form id="caloriesburned-form">
+      <h2>Calories Burned Calculator</h2>
+      <div class="form-group">
+        <label for="weight">Weight (kg):</label>
+        <input type="text" id="weight" name="weight" class="form-control" required>
+      </div>
+      <div class="form-group">
+        <label for="duration">Duration (minutes):</label>
+        <input type="text" id="duration" name="duration" class="form-control" required>
+      </div>
+      <div class="form-group">
+        <label for="activityLevel">Activity Level:</label>
+        <select id="activityLevel" name="activityLevel" class="form-control" required>
+          <option value="1">Sedentary</option>
+          <option value="1.2">Lightly Active</option>
+          <option value="1.4">Moderately Active</option>
+          <option value="1.6">Very Active</option>
+        </select>
+      </div>
+      <button type="submit" class="btn btn-primary">Calculate Calories Burned</button>
+      <div id="caloriesburned-result"></div>
+    </form>
+
+  </div>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
